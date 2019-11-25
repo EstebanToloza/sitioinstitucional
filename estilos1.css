@@ -1,0 +1,505 @@
+body {
+    margin: 0%;
+    font-family:'Poppins', sans-serif;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .listamenu {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    background: linear-gradient(#bef1cbcc, #a7bfeccc), url(../imagenes/fondo1.jpg); /*tenemos dos valores de rgba porque es un gradiente*/
+    background-repeat: space;
+    height: 100vh;
+    background-size: cover;
+}
+
+#contenedor-titulo-flex {
+    display: flex; /*NOTA:se coloca el display flex no para que ambos elementos vayan uno junto al otro, sino para que podamos usar el 
+    justify-content*/
+    
+    justify-content: center;
+    margin: 18vh 0;
+   
+    /*NOTA> al escribir solo dos valores, 18 y 0, el primer valor corresponde al margin-top y margin-bottom, y el segundo valor corresponde al margin
+    right y margin-lef. Es lo mismo que si escribieramos el siguiente codigo:
+
+    margin-top: 18vh;
+    margin-right: 0px;
+    margin-bottom: 18px;
+    margin-left: 0vh;
+    */
+    max-width: 1580px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.contenedor-titulo a, #nosotros a, #blog a, #que-esperas a, #contacto input[type="submit"] {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    background: #79e494cc;
+    padding: 14px 24px; /*padding, es el espaciado interno del elemento en su contenedor; a diferencia del margin que es el espaciado 
+    externo que lo separa de otros contenedores*/
+    width: 128px;
+    display: inline-block; /*pripiedad CSS que le aplica propiedades de elemento de bloque a elementos que son elementos de línea*/
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contenedor-titulo {
+    text-align: center;
+}
+
+p.logo {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: black;
+}
+
+/*seccion nosotros*/
+
+h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+#nosotros .contenedor-nosotros {
+    display: flex;;
+    justify-content: space-around;
+}
+
+#nosotros .texto {
+    width: 42%;
+    text-align: justify;
+}
+
+/*Seccion servicios*/
+
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.servicio {
+    width: 24%;
+    padding: 34px 30px 38px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+
+.servicio h4 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.servicio p {
+    margin-bottom: 20px;
+    height: 194px;
+    font-weight: normal;
+}
+
+.contenedor-servicios .verde1 {
+    background: linear-gradient(to top,  #a7bfeccc, #bef1cbcc);
+    box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);
+}
+
+.contenedor-servicios .verde2 {
+    background: linear-gradient(to top,  #a7bfeccc, #92f0aacc);
+    box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);
+}
+
+.ondas {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.icono {
+    float: right;
+}
+
+/*SECCION CLIENTES*/
+
+button.owl-prev {
+    font-size: 40px !important;
+}
+
+button.owl-next {
+    font-size: 40px !important;
+}
+
+span {
+    color: #c8d8f2;
+}
+
+/*SECCION TRABAJAR CONMIGO*/
+
+.contenedor-trabajar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#por-que-trabajar .item {
+width: 28%;
+text-align: center;
+}
+
+#por-que-trabajar ul li {
+    list-style: none;
+}
+
+#por-que-trabajar ul li:nth-child(2) {
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#por-que-trabajar ul li:nth-child(3) {
+    line-height: 31px;
+}
+
+/*SECCION BLOG*/
+
+#blog {
+    background-color: #F9FAFC;
+}
+
+#blog .contenedor-publicaciones {
+    display: flex;
+    justify-content: space-around;
+}
+
+#blog .publicacion {
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc;
+}
+
+#blog img {
+    width: 100%;
+}
+
+#blog .contenido {
+    background-color: #fff;
+    padding: 20px;
+}
+
+#blog h4 {
+    font-size: 23px;
+    margin-bottom: 16px;
+    margin: 0;
+}
+
+#blog p {
+    color: #5A6169;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+#blog a{
+    width: 87px;
+}
+
+.contenedor-publicaciones .publicacion {
+    margin-bottom: 40px;
+}
+
+/*seccion que esperas*/
+
+#que-esperas {
+    background: linear-gradient(#bef1cbcc, #a7bfeccc);
+    text-align: center;
+    padding: 50px 0;
+}
+
+#que-esperas h3 {
+    font-size: 40px;
+}
+
+#que-esperas a {
+    margin-bottom: 40px;
+}
+
+/*Seccion Contacto*/
+
+#contacto form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 77%;
+    margin: auto;
+}
+
+input[type="text"], input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid  #a7bfeccc;
+    font-size: 17px;
+    font-family:'Poppins', sans-serif;
+    }
+
+textarea {
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid  #a7bfeccc;
+    font-size: 17px;
+    margin-bottom: 40px;
+    width: 100%;
+    font-family:'Poppins', sans-serif;
+}
+
+#contacto input[type="submit"]{
+    width: 166px;
+    margin: auto;
+    border: none;
+}
+
+.contacto-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.contacto-info img {
+    width: 28px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/*Seccion Footer*/
+
+footer {
+    background-color: #2f2f2f;
+    padding: 40px 0;
+    text-align: center;
+
+}
+
+footer .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer img {
+    margin: 0 40px;
+    transform: rotate(0);
+    transition: 0.4s;
+}
+
+footer img:hover {
+    transform: rotate(360deg);
+    transition: 0.4s;
+}
+
+footer p {
+    color: #fff;
+    margin-top: 40px;
+}
+
+#whatsapp {
+    position: fixed;
+    top: 80%;
+    right: 1%;
+    z-index: 200;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#clientes, #servicios, #contacto {
+    padding: 30px 0;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    
+    .menu-icon {
+        display: block;
+        float: right;
+        width: 40px;
+        height: 40px;
+        margin-top: 15px;
+
+    }
+
+    header nav {
+        position: absolute;
+        top: 83px;
+        left: 0;
+        height: 290px;
+        background: #7dde9e;
+        width: 100%;
+        display: none;
+    }
+
+    header nav ul{
+        flex-direction: column;
+    }
+
+    header nav ul li{
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    h3 {
+        font-size: 43px;
+    }
+
+    #nosotros .contenedor-nosotros {
+    flex-direction: column;
+    }
+
+    #nosotros img{
+        width: 100%;
+    }
+
+    #nosotros .texto {
+        width: 100%;
+    }
+
+    .contenedor-servicios {
+        flex-direction: column;
+    }
+
+    .servicio {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .icono {
+        float: right;
+    }
+
+    .ondas {
+        width: 100%;
+    }
+
+    .contenedor-trabajar {
+        flex-direction: column;
+    }
+
+    #por-que-trabajar .item {
+        width: 100%;
+    }
+
+    .item ul {
+        padding: 0;
+    }
+
+    #blog .contenedor-publicaciones {
+        flex-direction: column;
+    }
+
+    #blog .publicacion {
+        width: 100%;
+    }
+
+    #contacto form {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    input[type="text"], input[type="email"] {
+        width: 100%;
+    }
+
+    footer img {
+        margin: 0 20px;
+    }
+
+    #whatsapp img {
+        width: 50px;    
+        height: 50px;
+
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+
+    header {
+        height: 70vh;
+    }
+
+    .servicio {
+        width: 70%;
+    }
+
+    #blog .publicacion {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
