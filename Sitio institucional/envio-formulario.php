@@ -4,9 +4,9 @@ $email_usuario=$_POST['email'];
 $consulta_usuario=$_POST['mensaje'];
 // Creo 3 variables que me toman lo que se envía por POST de cada valor del formulario
 
-$destino="jonlifschitz@gmail.com";
+$destino="estebanisaiastoloza@gmail.com";
 
-$asunto="Consulta enviada desde www.jonathanlifschitz.com.ar";
+$asunto="Consulta enviada desde www.sdgsoluciones.com";
 
 $mensaje="Tu Nombre es: ".$nombre_usuario."\r\n";
 $mensaje.="Tu Email es: ".$email_usuario."\r\n";
